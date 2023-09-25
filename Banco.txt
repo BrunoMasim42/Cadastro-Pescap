@@ -1,0 +1,51 @@
+Relação de muitos pra um
+
+creat database pesca_ap
+default character set utf8
+default collate utf8_general_ci;
+
+create table usuarios(
+id_usuarios int not null auto_increment,
+nomepescado varchar (40) not null,
+numeroregistro varchar (40) default null,
+numerocadastro varchar (45) default null,
+nascimento date,
+sexo enum ('M','F') default null,
+rg varchar(40),
+cpf varchar (40),
+endereco varchar (45),
+cidade varchar (40),
+cep varchar (40),
+nomebarco varchar (40) default null,
+numerocadastro varchar (40) default not null,
+tamanho varchar (40) default not null,
+materialcasco enum ('Mad', 'Fer', 'Fib'),
+anofabricacao varchar (40) default null,
+potenciamotor varchar (40)default null,
+localatuacao varchar (40) default null,
+Primary Key (id_usuarios)
+)Default Charset= utf8;
+
+
+create table coletor(
+id_coletor int not null auto_increment,
+nomepescador varchar (40) default null,
+nomeembarcacao varchar (40) default null,
+numeropesquisa varchar(30) default null,
+pesopescado decimal (8,2)
+principalespecie varchar (40) default null,
+valormedio varchar (40) default null,
+dataproducao date,
+destinoproducao varchar (40),
+pesototal decimal (8,2) AS (numeropesquisa * peso) virtual
+id_usuarios int not null,
+Primary Key (id_coletor),
+foreign Key (id_usuarios) references usuarios (id), 
+
+)Default Charset=utf8;
+
+Acessando o resultado
+
+select * from pescador p
+JOIN registro r
+ON p.id = r.idpesca;

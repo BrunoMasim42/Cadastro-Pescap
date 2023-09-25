@@ -1,0 +1,21 @@
+{
+    "name": "login/masim",
+    "description": "sistema de cadastro",
+    "authors": [
+        {
+            "name": "Bruno Masim",
+            "email": "simoes.j5@outlook.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+    	"psr-4": {
+    		"Classes\\": "../classes/",
+    		"Models\\": "../Models/",
+    		"Traits\\": "../traits/"
+    	}
+    }
+
+
+}
+

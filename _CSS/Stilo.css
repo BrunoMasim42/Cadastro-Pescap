@@ -1,0 +1,45 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+input{
+	display:block;
+	height: 30px;
+	width: 400px;
+	margin: 10px;
+	border-radius: 30px;
+	border: 1px solid grey;
+	font-size: 9pt;
+	padding: 5px 10px;
+	/*color: white;*/
+	outline: none;
+}
+
+div#corpo-form{
+	width: 450px;
+	margin: 150px auto 0px auto;
+}
+
+section{
+	width: 600px;
+	height: 246px;
+	margin-bottom: 50px;
+	margin-left: -80px;
+	border: 2px solid grey;
+}
+
+a{
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+input[type=submit]{
+	background-color: grey;
+	border:none;
+	cursor: pointer;
+	margin-left: 20px;
+}

@@ -1,0 +1,42 @@
+Nome do Pescador
+numero do RGP pescador
+Numero de cadastro na colonia
+trocar Faixa Etaria por Idade
+
+Embarcação:
+
+Numero de cadastro na Marinha
+Trocar Modelo por tamanho
+incluir material do casco
+
+1- Madeira
+2- Ferro
+3- Fibra
+
+Incluir Potencia e marca do motor
+
+Logim sistema:
+Cadastrar Pescador 
+Cadastrar Embarcação
+Registrar Produção:
+1- Pescador
+2- Embarcação
+3- Quntidade de peixe (kg)
+4- Principal especie (resgistrar especies)
+5- Valor médio por kg
+6- Destino da Produção
+Emissão de relatorio
+
+Coletor tera Acesso somente ao registro de produção
+
+o registro será chave secundaria. toda as resposta de informações no 
+registro devera cair e ser armazenada no cadastro.
+precisa montar um painel de cadastro para o banco de dados
+Serão 2 planilhas diferentes um de registro outro de cadastro
+
+Consultas:
+Produção por embarcação ( 30, 60 e 90)
+Produção por Pescador
+Produção por especie
+Valor total da produção(obs: colocar calculadora a cada 30 dias de produção)
+Colocar Botão Emitir Relatorio
